@@ -367,7 +367,7 @@ textarea {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   cursor: pointer;
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-textarea {
@@ -379,7 +379,7 @@ textarea {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   cursor: pointer;
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-textarea::placeholder {
@@ -409,7 +409,7 @@ textarea {
 .form-textarea:hover,
 .form-field:focus,
 .form-textarea:focus {
-  border: 2px solid var(--accent-color);
+  outline: 2px solid var(--accent-color);
 }
 
 .form-checkbox {
@@ -456,8 +456,8 @@ textarea {
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.icon-checkbox:hover,
-.icon-checkbox:focus {
+.checkbox:focus + .icon-checkbox,
+.checkbox:hover + .icon-checkbox {
   border: 2px solid var(--accent-color);
 }
 
@@ -740,7 +740,8 @@ textarea {
 
 .projects {
   display: block;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .projects:hover,
@@ -936,10 +937,12 @@ textarea {
   line-height: 20px;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+  transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.input-footer:hover,
 .input-footer:focus {
-  outline: 1px solid var(--accent-color);
+  outline: 2px solid var(--accent-color);
 }
 
 .button-footer,
@@ -956,6 +959,8 @@ textarea {
   background-color: var(--accent-color);
   border: inherit;
   border-radius: 4px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-footer:hover,
