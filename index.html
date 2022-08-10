@@ -98,13 +98,17 @@
                       <textarea name="comment" id="comment" rows="10" class="form-textarea" placeholder="Введіть текст"></textarea>
                     </label>
 
-                    <div class="form-checkbox">
+                    <label for="policy" class="form-checkbox">
                       <input type="checkbox" name="policy" id="policy" class="checkbox">
-                      <span class="icon-checkbox"></span>
-                      <label for="policy" class="label-checkbox">Погоджуюся з розсилкою, та приймаю 
+                      <span class="icon-checkbox">
+                        <svg class="svg-check" width="16" height="15">
+                          <use href="./images/icons.svg#icon-icon-check"></use>
+                        </svg>
+                      </span>
+                      Погоджуюся з розсилкою, та приймаю 
                       <a class="checkbox-link" href="#">Умови договору</a>      
                       </label>
-                    </div>
+                    
 
                     <button type="submit" class='button-form'> Відправити </button>
                   </form>
@@ -418,80 +422,7 @@
     </main>
 
     <!--Подвал-->
-    <footer class="footer">
-      <div class="container networks">
-        <div class="footer-address">
-        <a href="./index.html" class="logo link"
-          ><span class="logo-first">Web</span><span class="logo-third">Studio</span></a
-        >
-        <address class="site-address">
-          <ul class="footer-contacts list">
-            <li class="address-item">
-              <a
-                class="address link"
-                href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
-                target="_blank"
-                rel="noopener noreferrer"
-                >м. Київ, пр-т Лесі Українки, 26</a
-              >
-            </li>
-            <li class="address-item">
-              <a class="mail link" href="mailto:info@example.com">info@example.com</a>
-            </li>
-            <li>
-              <a class="tel link" href="tel:+380991111111">+38 099 111 11 11</a>
-            </li>
-          </ul>
-        </address>
-       </div>
-        <div class="site-networks">          
-          <p class="networks-title title">Приєднуйтесь</p>
-          <ul class="networks-icon list">
-            
-                  <a class="social-icon net"href="#" aria-label="Instagram">                   
-                  <svg class="footer-icon">                    
-                    <use href="./images/icons.svg#icon-instagram-2"></use>
-                  </svg>                  
-                </a>
-            </li>
-                <a class="social-icon net" href="#" aria-label="Twitter">                 
-                  <svg class="footer-icon">
-                    <use href="./images/icons.svg#icon-twitter-1"></use>
-                  </svg>                
-                </a>
-            <li>
-                <a class="social-icon net" href="#" aria-label="Facebook">                
-                  <svg class="footer-icon">
-                   <use href="./images/icons.svg#icon-facebook-1"></use>
-                  </svg>                 
-                </a>
-            </li>  
-            <li>
-                <a class="social-icon net" href="#" aria-label="LinkedIn">                
-                  <svg class="footer-icon">   
-                    <use href="./images/icons.svg#icon-linkedin-1"></use>
-                  </svg>                
-                </a>
-            </li>
-                </ul>
-        </div>
-
-        <div class="site-form">
-          <p class="networks-title title"> Підпишіться на розсилку</p>
-          <form class="form">
-            <label for="email" class="label-footer">
-              <input type="text" name="email" id="email" placeholder="E-mail" class="input-footer">
-            </label>
-            <button type="submit" class="button-footer">Підписатися
-              <svg class="icon-send" width="24" height="24">
-                <use href="./images/icons.svg#icon-icon-send"></use>
-              </svg>
-            </button>
-          </form>
-
-        </div>
-      </div>      
-    </footer>
+    250ms cubic-bezier(0.4, 0, 0.2, 1)
      <script src="./js/modal.js"></script>
   </body>
 </html>
