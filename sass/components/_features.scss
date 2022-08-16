@@ -1,0 +1,47 @@
+.visually-hidden {
+  @extend %visually-hidden;
+}
+.section {
+  @extend %section;
+}
+
+.container {
+  @extend %container;
+}
+
+.features {
+  @extend %list;
+  display: flex;
+  margin-right: -30px;
+  margin-bottom: -30px;
+
+  &__item {
+    width: 270px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
+
+  &__desc {
+    color: $secondary-color;
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  &__title {
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+}
+
+.thumb {
+  display: flex;
+  width: 270px;
+  height: 120px;
+  background-color: $button-bcg;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  border-radius: 4px;
+}
