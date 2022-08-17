@@ -844,9 +844,9 @@ a {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.networks {
+/* .networks {
   display: flex;
-}
+} */
 
 .footer-networks__title,
 .footer-form__title {

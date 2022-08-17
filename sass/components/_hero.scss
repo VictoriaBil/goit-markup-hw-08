@@ -10,14 +10,6 @@
   background-position: center;
   background-color: $hero-bcg;
 
-  &-box {
-    width: 696px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 200px;
-    padding-bottom: 200px;
-  }
-
   &__title {
     color: $white;
     font-weight: 900;
@@ -28,6 +20,14 @@
     letter-spacing: 0.06em;
     margin-bottom: 30px;
   }
+}
+
+.hero-box {
+  width: 696px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 .container {
   @extend %container;
