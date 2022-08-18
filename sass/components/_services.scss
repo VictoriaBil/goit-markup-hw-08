@@ -1,10 +1,4 @@
-.container {
-  @extend %container;
-}
-
 .services {
-  @extend %section;
-
   &__title {
     font-weight: 700;
     font-size: 36px;

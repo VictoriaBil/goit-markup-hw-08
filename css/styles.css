@@ -124,13 +124,8 @@ a {
   font-size: 26px;
   line-height: 1.2;
   text-decoration: none;
-  transition: color var(--transition-duration) var(--cubic);
-}
-
-.logo,
-.logo:hover,
-.logo:focus {
   color: var(--accent-color);
+  transition: color var(--transition-duration) var(--cubic);
 }
 
 .logo--header {
@@ -288,10 +283,11 @@ a {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
-  min-width: 528px;
+  width: 528px;
   min-height: 581px;
   background-color: var(--white);
   transition: transform var(--transition-duration) var(--cubic);
+  padding: 40px 40px;
 }
 
 .modal__button {
@@ -314,7 +310,6 @@ a {
 
 .modal__title {
   display: block;
-  margin-top: 40px;
   margin-bottom: 12px;
   text-align: center;
   font-weight: 700;
@@ -327,8 +322,6 @@ a {
 .modal-form {
   display: flex;
   flex-direction: column;
-  margin-left: 40px;
-  margin-right: 40px;
 }
 
 .modal-form__label {

@@ -7,14 +7,6 @@
   }
 }
 
-.container {
-  @extend %container;
-
-  &--position {
-    display: flex;
-  }
-}
-
 .header-list {
   @extend %list;
   display: flex;

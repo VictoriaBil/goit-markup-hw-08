@@ -56,12 +56,12 @@ a {
   list-style: none;
 }
 
-.clients, .services, .section, .hero {
+.hero, .section {
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
-.clients, .container {
+.container {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
@@ -95,16 +95,31 @@ a {
   background-color: #188ce8;
 }
 
+.container--position {
+  display: flex;
+}
+
+.thumb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 270px;
+  height: 120px;
+  background-color: #f5f4fa;
+  margin-bottom: 30px;
+  border-radius: 4px;
+}
+
+.social-networks {
+  display: flex;
+}
+
 .header {
   border-bottom: 1px solid #ececec;
 }
 .header__nav {
   display: flex;
   align-items: center;
-}
-
-.container--position {
-  display: flex;
 }
 
 .header-list {
@@ -178,6 +193,7 @@ a {
   font-size: 26px;
   line-height: 1.2;
   text-decoration: none;
+  color: #2196f3;
   transition: color var(--transition-duration) var(--cubic);
 }
 .logo--header {
@@ -190,13 +206,6 @@ a {
   padding-top: 0;
   padding-bottom: 0;
   margin-bottom: 20px;
-}
-
-.logo {
-  color: #2196f3;
-}
-.logo:hover, .logo:focus {
-  color: #2196f3;
 }
 
 .hero {
@@ -249,8 +258,9 @@ a {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
-  min-width: 528px;
+  width: 528px;
   min-height: 581px;
+  padding: 40px 40px;
   background-color: #ffffff;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -271,7 +281,6 @@ a {
 }
 .modal__title {
   display: block;
-  margin-top: 40px;
   margin-bottom: 12px;
   text-align: center;
   font-weight: 700;
@@ -287,8 +296,6 @@ a {
 .modal-form {
   display: flex;
   flex-direction: column;
-  margin-left: 40px;
-  margin-right: 40px;
 }
 .modal-form__label {
   position: relative;
@@ -447,17 +454,6 @@ a {
   margin-bottom: 10px;
 }
 
-.thumb {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 270px;
-  height: 120px;
-  background-color: #f5f4fa;
-  margin-bottom: 30px;
-  border-radius: 4px;
-}
-
 .services__title {
   font-weight: 700;
   font-size: 36px;
@@ -534,13 +530,8 @@ a {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-
-.workers-section {
+.workers__box {
   padding: 30px;
-}
-
-.social-networks {
-  display: flex;
 }
 
 .social {
@@ -553,7 +544,6 @@ a {
   height: 44px;
   padding: 0 12px;
 }
-
 .social__item {
   display: block;
   color: #afb1b8;
@@ -583,7 +573,6 @@ a {
   margin-right: 30px;
   margin-bottom: 30px;
 }
-
 .clients__icon {
   display: flex;
   align-items: center;

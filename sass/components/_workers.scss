@@ -1,11 +1,3 @@
-.section {
-  @extend %section;
-}
-
-.container {
-  @extend %container;
-}
-
 .workers {
   background-color: $button-bcg;
 
@@ -46,8 +38,8 @@
       0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
   }
-}
 
-.workers-section {
-  padding: 30px;
+  &__box {
+    padding: 30px;
+  }
 }

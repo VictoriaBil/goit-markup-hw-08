@@ -8,6 +8,7 @@
   font-size: 26px;
   line-height: 1.2;
   text-decoration: none;
+  color: $accent-color;
   transition: color var(--transition-duration) var(--cubic);
 
   &--header {
@@ -22,14 +23,5 @@
     padding-top: 0;
     padding-bottom: 0;
     margin-bottom: 20px;
-  }
-}
-
-.logo {
-  color: $accent-color;
-
-  &:hover,
-  &:focus {
-    color: $accent-color;
   }
 }

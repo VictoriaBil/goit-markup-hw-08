@@ -20,8 +20,9 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
-  min-width: 528px;
+  width: 528px;
   min-height: 581px;
+  padding: 40px 40px;
   background-color: $white;
   transition: transform $transition-duration $cubic;
 
@@ -45,7 +46,6 @@
 
   &__title {
     display: block;
-    margin-top: 40px;
     margin-bottom: 12px;
     text-align: center;
     font-weight: 700;
@@ -63,8 +63,6 @@
 .modal-form {
   display: flex;
   flex-direction: column;
-  margin-left: 40px;
-  margin-right: 40px;
 
   &__label {
     position: relative;
