@@ -1,0 +1,13 @@
+.footer-form {
+  display: block;
+  height: 86px;
+  width: 570px;
+  margin-top: 12px;
+
+  &__title {
+    @include textStyle(700, 14px, 16px, 0.03em);
+    text-transform: uppercase;
+    color: $white;
+    margin-bottom: 20px;
+  }
+}

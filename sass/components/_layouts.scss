@@ -15,7 +15,7 @@
 }
 
 .thumb {
-  @include centeredFlex();
+  @include centeredFlex($position: center);
   width: 270px;
   height: 120px;
   background-color: $button-bcg;
@@ -25,4 +25,26 @@
 
 .social-networks {
   display: flex;
+}
+
+.services-thumb {
+  position: relative;
+}
+
+.services-box {
+  @include centeredFlex($position: center);
+  width: 100%;
+  height: 70px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(47, 48, 58, 0.8);
+}
+
+.hero-box {
+  width: 696px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }

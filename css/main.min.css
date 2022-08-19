@@ -155,6 +155,7 @@ a {
 .header-contacts__link {
   display: flex;
   align-items: center;
+  justify-content: start;
   padding-top: 32px;
   padding-bottom: 32px;
   color: #757575;
@@ -480,7 +481,7 @@ a {
 .services-thumb {
   position: relative;
 }
-.services-block {
+.services-box {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -526,7 +527,7 @@ a {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-.workers-section {
+.workers__box {
   padding: 30px;
 }
 .social-networks {
@@ -589,7 +590,7 @@ a {
   color: #2196f3;
   border: 1px solid #2196f3;
 }
-.site-contacts {
+.footer__box-contacts {
   display: block;
   width: 231px;
   margin-right: 70px;
@@ -599,7 +600,7 @@ a {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-.footer-address {
+.footer__address {
   font-style: normal;
 }
 .footer-contacts {
@@ -792,7 +793,7 @@ a {
   margin-right: 30px;
   margin-bottom: 30px;
 }
-.projects-title {
+.project-card__title {
   color: #212121;
   font-weight: 700;
   letter-spacing: 0.06em;
@@ -800,12 +801,12 @@ a {
   line-height: 2;
   margin-bottom: 4px;
 }
-.projects-type {
+.project-card__product {
   color: #757575;
   font-size: 16px;
   line-height: 1.88;
 }
-.projects-contant {
+.project-card__box {
   padding: 20px 24px;
   border-left: 1px solid #eee;
   border-bottom: 1px solid #eee;

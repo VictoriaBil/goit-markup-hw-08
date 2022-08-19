@@ -1,0 +1,45 @@
+.button {
+  @extend %button;
+  @extend %button__title;
+
+  &:hover {
+    background-color: $button-hover;
+  }
+
+  &--form {
+    font-family: inherit;
+    color: $white;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.06em;
+    transition: background-color $transition-duration $cubic, box-shadow $transition-duration $cubic;
+  }
+
+  &--form:hover,
+  &--form:focus {
+    background-color: $button-hover;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
+
+  &__icon {
+    display: block;
+    margin-left: 10px;
+  }
+
+  &--footer {
+    font-family: inherit;
+    color: $white;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.06em;
+    transition: background-color $transition-duration $cubic, box-shadow $transition-duration $cubic;
+  }
+
+  &--footer:hover,
+  &--footer:focus {
+    background-color: $button-hover;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
+}

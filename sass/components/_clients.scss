@@ -21,7 +21,7 @@
   }
 
   &__icon {
-    @include centeredFlex();
+    @include centeredFlex($position: center);
     color: $icon-color;
     width: 170px;
     height: 92px;

@@ -1,0 +1,15 @@
+.footer {
+  background-color: $hero-footer-bcg;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  &__box-contacts {
+    display: block;
+    width: 231px;
+    margin-right: 70px;
+  }
+
+  &__address {
+    font-style: normal;
+  }
+}

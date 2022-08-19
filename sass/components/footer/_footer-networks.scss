@@ -1,0 +1,17 @@
+.footer-networks {
+  display: block;
+  height: 80px;
+  width: 206px;
+  margin-top: 12px;
+  margin-right: 93px;
+
+  &__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $white;
+    margin-bottom: 20px;
+  }
+}

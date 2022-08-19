@@ -1,7 +1,7 @@
-@mixin centeredFlex($type: flex) {
-  display: $type;
+@mixin centeredFlex($position) {
+  display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: $position;
 }
 
 @mixin textStyle($weight: 400, $size: 16px, $height: 20px, $spacing: 0.03em) {

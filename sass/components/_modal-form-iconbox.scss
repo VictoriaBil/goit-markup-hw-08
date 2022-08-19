@@ -1,0 +1,25 @@
+.modal-form__icon-box {
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 13px;
+  transform: translateY(-50%);
+  width: 16px;
+  height: 15px;
+  margin-right: 8px;
+  border: 2px solid $primary-color;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: border $transition-duration $cubic;
+
+  .modal-form__checkbox:focus + &,
+  .modal-form__checkbox:hover + & {
+    border: 2px solid $accent-color;
+  }
+
+  .modal-form__checkbox:checked + & {
+    border-color: $accent-color;
+    background-color: $accent-color;
+    background-origin: border-box;
+  }
+}

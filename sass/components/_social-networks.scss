@@ -23,4 +23,18 @@
     background-color: $accent-color;
     color: $white;
   }
+
+  &__item--footer {
+    color: $white;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    fill: currentColor;
+    transition: color $transition-duration $cubic, background-color $transition-duration $cubic;
+  }
+
+  &__item--footer:hover,
+  &__item--footer:focus {
+    color: $white;
+    background-color: $accent-color;
+  }
 }

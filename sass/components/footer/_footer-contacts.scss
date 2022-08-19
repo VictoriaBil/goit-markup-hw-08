@@ -1,0 +1,25 @@
+.footer-contacts {
+  @extend %list;
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+
+  &__item {
+    margin-bottom: 9px;
+  }
+
+  &__address {
+    color: $white;
+    transition: color $transition-duration $cubic;
+  }
+
+  &__address:hover,
+  &__address:focus {
+    color: $accent-color;
+  }
+
+  &__address--inverse {
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
