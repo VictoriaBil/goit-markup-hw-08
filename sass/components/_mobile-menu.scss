@@ -30,19 +30,11 @@
   display: none;
 }
 
+.menu-button.is-open > .icon-menu {
+  display: none;
+}
+
 .menu-button.is-open .icon-cross {
-  display: block;
-}
-
-.menu-button.is-open .icon-menu {
-  display: none;
-}
-
-.menu-close.is-open .icon-menu {
-  display: none;
-}
-
-.menu-close.is-open .icon-cross {
   display: block;
 }
 
