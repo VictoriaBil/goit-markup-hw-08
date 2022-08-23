@@ -1,6 +1,10 @@
 .header {
   border-bottom: 1px solid $header-border;
 
+  @media screen and (max-width: 767px) {
+    position: relative;
+  }
+
   // &__nav {
   //   display: flex;
   //   align-items: center;

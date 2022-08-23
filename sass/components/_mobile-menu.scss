@@ -12,10 +12,25 @@
   display: none;
 }
 
-.menu-button--is-open .icon-cross {
+.menu-button.is-open .icon-cross {
   display: block;
 }
 
-.menu-button--is-open .icon-menu {
+.menu-button.is-open .icon-menu {
   display: none;
+}
+
+.menu-container {
+  display: none;
+  position: absolute;
+  height: 70px;
+  background-color: aquamarine;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  text-align: center;
+
+  &.is-open {
+    display: block;
+  }
 }
