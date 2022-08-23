@@ -219,6 +219,26 @@ a {
   background-color: transparent;
   border: none;
 }
+@media screen and (min-width: 768px) {
+  .menu-button {
+    display: none;
+  }
+}
+
+.menu-close {
+  display: inline-flex;
+  padding: 0;
+  margin: 0;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: none;
+}
+@media screen and (min-width: 768px) {
+  .menu-close {
+    display: none;
+  }
+}
 
 .icon-cross {
   display: none;
@@ -230,6 +250,14 @@ a {
 
 .menu-button.is-open .icon-menu {
   display: none;
+}
+
+.menu-close.is-open .icon-menu {
+  display: none;
+}
+
+.menu-close.is-open .icon-cross {
+  display: block;
 }
 
 .menu-container {

@@ -53,17 +53,24 @@
           </li>
         </ul>
 
-        <button type="button" class=" menu-button is-open js-open-menu js-menu-container" 
-          aria-expanded="false"
-          aria-controls="mobile-menu"
-          >
+        <button type="button" class="menu-button is-open js-open-menu" 
+          aria-controls="menu-container"
+          aria-expanded="false">
           <svg width="24" height="16" aria-lebel="Перемикач мобільного меню">
             <use class="icon-menu" href="./images/icons.svg#icon-menu_24px"></use>
+            </use>
+          </svg>
+        </button>
+
+        <button type="button" class="menu-close is-open js-close-menu"
+          aria-controls="menu-container"
+          aria-expanded="false">
+          <svg width="24" height="16" aria-lebel="Перемикач мобільного меню">
             <use class="icon-cross" href="./images/icons.svg#icon-close_24px"></use>
           </svg>
         </button>
 
-        <div class="menu-container is-open js-open-menu js-menu-container "
+        <div class="menu-container id='menu-container'  js-menu-container "
         aria-expanded="false"
         aria-controls="mobile-menu"
         >
