@@ -1,6 +1,6 @@
 .header-contacts {
   @extend %list;
-  display: flex;
+  // display: flex;
   margin-left: auto;
   gap: 50px;
   letter-spacing: 0.02em;
@@ -14,7 +14,7 @@
   }
 
   &__link {
-    @include centeredFlex($position: start);
+    // @include centeredFlex($position: start);
     padding-top: 32px;
     padding-bottom: 32px;
     color: $secondary-color;

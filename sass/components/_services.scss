@@ -1,4 +1,8 @@
 .services {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
   &__title {
     font-weight: 700;
     font-size: 36px;
@@ -9,7 +13,7 @@
 
   &__list {
     @extend %list;
-    display: flex;
+    // display: flex;
     margin-right: -30px;
     margin-bottom: -30px;
   }

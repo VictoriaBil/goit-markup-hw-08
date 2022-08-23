@@ -6,13 +6,13 @@
   @extend %section;
 }
 
-.container {
-  @extend %container;
+// .container {
+//   @extend %container;
 
-  &--position {
-    display: flex;
-  }
-}
+//   &--position {
+//     display: flex;
+//   }
+// }
 
 .thumb {
   @include centeredFlex($position: center);
@@ -21,10 +21,18 @@
   background-color: $button-bcg;
   margin-bottom: 30px;
   border-radius: 4px;
+
+  @media screen and (max-width: 767px) {
+    width: 100%;
+  }
 }
 
 .social-networks {
-  display: flex;
+  // display: flex;
+  @media screen and (max-width: 767px) {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .services-thumb {
@@ -42,7 +50,7 @@
 }
 
 .hero-box {
-  width: 696px;
+  max-width: 696px;
   margin-left: auto;
   margin-right: auto;
   padding-top: 200px;
