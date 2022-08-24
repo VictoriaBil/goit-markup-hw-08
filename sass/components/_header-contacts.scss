@@ -25,6 +25,12 @@
     }
   }
 
+  &__item:first-child {
+    @media screen and (min-width: 768px) {
+      padding-bottom: 10px;
+    }
+  }
+
   &__link {
     // @include centeredFlex($position: start);
     // padding-top: 32px;

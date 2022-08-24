@@ -4,6 +4,12 @@
   // margin-right: -30px;
   // margin-bottom: -30px;
 
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
   &__item {
     min-width: 270px;
 
@@ -11,6 +17,12 @@
       margin-right: auto;
       margin-left: auto;
     }
+
+    @media screen and (min-width: 768px) {
+      display: block;
+      width: calc((100% - 60px) / 2);
+    }
+
     // margin-right: 30px;
     // margin-bottom: 30px;
   }
