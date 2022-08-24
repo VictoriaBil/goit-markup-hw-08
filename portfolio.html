@@ -24,9 +24,58 @@
           <a href="./index.html" class="logo"
             >Web<span class="logo--header">Studio</span></a
           >
-          <ul class="header-list list">
+
+           <button type="button" class="menu-button is-open js-open-menu" 
+          aria-controls="menu-container"
+          aria-expanded="false">
+          <svg class="svg-menu" width="24" height="16" aria-lebel="Перемикач мобільного меню">
+            <use class="icon-menu" href="./images/icons.svg#icon-menu_24px"></use>
+            </use>
+          </svg>
+        </button>
+        
+        </nav>
+
+
+          <!-- <ul class="header-list list">
             <li class="header-list__item">
-              <a class="header-list__link" href="./index.html">Студія   
+              <a class="header-list__link header-list__link--current" href="./index.html">Студія   
+              </a>
+            </li>
+            <li class="header-list__item">
+              <a class="header-list__link" href="./portfolio.html">Портфоліо</a>
+            </li>
+            <li class="header-list__item"><a href="#" class="header-list__link">Контакти</a></li>
+          </ul>
+        
+        <ul class="header-contacts list">
+          <li class="header-contacts__item">            
+            <a class="header-contacts__link" href="mailto:info@devstudio.com" aria-label="Написать письмо">
+            <svg class="header-contacts__icon" width="16" height="12">
+                <use href="./images/icons.svg#icon-envelope"></use>
+            </svg>
+            info@devstudio.com</a>            
+          </li>
+          <li class="header-contacts__item">
+            <a class="header-contacts__link" href="tel:+380961111111" aria-label="Позвонить нам">
+              <svg class="header-contacts__icon" width="10" height="16">
+                <use href="./images/icons.svg#icon-smartphone"></use>
+              </svg>
+              +38 096 111 11 11</a>
+          </li>
+        </ul> -->
+
+       
+
+  <div class="menu-container id='menu-container'  js-menu-container "
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+        >  
+
+     <div class="navigation">
+         <ul class="header-list list">
+            <li class="header-list__item">
+              <a class="header-list__link " href="./index.html">Студія   
               </a>
             </li>
             <li class="header-list__item">
@@ -34,7 +83,9 @@
             </li>
             <li class="header-list__item"><a href="#" class="header-list__link">Контакти</a></li>
           </ul>
-        </nav>
+      </div>
+        
+      <div class="contacts">
         <ul class="header-contacts list">
           <li class="header-contacts__item">            
             <a class="header-contacts__link" href="mailto:info@devstudio.com" aria-label="Написать письмо">
@@ -52,7 +103,29 @@
           </li>
         </ul>
       </div>
+
+      <div class="block">
+        <ul class="mobile-social">
+          <li class="mobile-social__item"> <a class="mobile-social__link" href="#">Instagram</a> </li>
+          <li class="mobile-social__item"> <a class="mobile-social__link" href="#">Twitter</a>  </li>
+          <li class="mobile-social__item"> <a class="mobile-social__link" href="#">Facebook</a> </li>
+          <li class="mobile-social__item"> <a class="mobile-social__link" href="#">LinkedIn</a>  </li>
+        </ul>
+        
+      </div>
+        
+           <button type="button" class="menu-close is-open js-close-menu"
+          aria-controls="menu-container"
+          aria-expanded="false">
+          <svg class="svg-close" width="24" height="16" aria-lebel="Перемикач мобільного меню">
+            <use class="icon-cross" href="./images/icons.svg#icon-close_24px"></use>
+          </svg>
+           </button>
+      </div>
+
+    </div>      
     </header>
+
 
     <main>
       <section class="section">
@@ -295,5 +368,6 @@
         </div>
       </div>      
     </footer>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

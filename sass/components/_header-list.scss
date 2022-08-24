@@ -1,16 +1,21 @@
 .header-list {
   @extend %list;
   // display: flex;
-  gap: 50px;
+  // gap: 50px;
   letter-spacing: 0.02em;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
 
+  @media screen and (max-width: 767px) {
+    font-size: 40px;
+    line-height: 1.18;
+  }
+
   &__link {
     display: block;
-    position: relative;
-    padding-top: 32px;
+    // position: relative;
+    // padding-top: 32px;
     padding-bottom: 32px;
     color: $primary-color;
     transition: color $transition-duration $cubic;
@@ -21,15 +26,17 @@
   }
 
   &__link--current::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -1px;
-    display: block;
-    height: 4px;
-    width: 100%;
-    border-radius: 2px;
-    background-color: currentColor;
+    @media screen and (min-width: 768px) {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -1px;
+      display: block;
+      height: 4px;
+      width: 100%;
+      border-radius: 2px;
+      background-color: currentColor;
+    }
   }
 
   &__link:hover,

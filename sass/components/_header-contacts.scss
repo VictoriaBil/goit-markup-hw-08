@@ -2,21 +2,34 @@
   @extend %list;
   // display: flex;
   margin-left: auto;
-  gap: 50px;
+  // gap: 50px;
   letter-spacing: 0.02em;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
 
+  @media screen and (max-width: 767px) {
+    display: flex;
+    gap: 32px;
+    flex-direction: column-reverse;
+    font-size: 34px;
+    line-height: 1.18;
+  }
+
   &__icon {
     margin-right: 10px;
     fill: currentColor;
+
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
   }
 
   &__link {
     // @include centeredFlex($position: start);
-    padding-top: 32px;
-    padding-bottom: 32px;
+    // padding-top: 32px;
+    // padding-bottom: 32px;
+
     color: $secondary-color;
     transition: color $transition-duration $cubic;
   }
