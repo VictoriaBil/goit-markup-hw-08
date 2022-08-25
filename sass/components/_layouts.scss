@@ -6,14 +6,6 @@
   @extend %section;
 }
 
-// .container {
-//   @extend %container;
-
-//   &--position {
-//     display: flex;
-//   }
-// }
-
 .thumb {
   @include centeredFlex($position: center);
   min-width: 270px;

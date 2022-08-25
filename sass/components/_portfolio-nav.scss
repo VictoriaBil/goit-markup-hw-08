@@ -1,11 +1,9 @@
 .portfolio-nav {
   @extend %list;
   display: flex;
-  // justify-content: center;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
-  // margin-bottom: 50px;
   gap: 8px;
 
   @media screen and (max-width: 767px) {
@@ -14,6 +12,16 @@
     max-width: 326px;
     row-gap: 15px;
     margin-bottom: 40px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    justify-content: center;
+    margin-bottom: 50px;
   }
 
   &__button {

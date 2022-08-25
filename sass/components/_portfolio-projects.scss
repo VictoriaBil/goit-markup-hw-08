@@ -6,12 +6,21 @@
   margin-bottom: -30px;
 
   &__item {
-    min-width: 370px;
     margin-right: 30px;
     margin-bottom: 30px;
 
     @media screen and (max-width: 767px) {
+      min-width: 370px;
       width: 100%;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      max-width: 370px;
+      width: calc((100% - 60px) / 2);
+    }
+
+    @media screen and (min-width: 1200px) {
+      max-width: 370px;
     }
   }
 }

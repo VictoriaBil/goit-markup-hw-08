@@ -1,6 +1,5 @@
 .logo {
   display: inline-block;
-  // margin-right: 93px;
   padding-top: 24px;
   padding-bottom: 25px;
   font-family: Raleway, sans-serif;
@@ -24,7 +23,8 @@
     padding-bottom: 0;
     margin-bottom: 20px;
 
-    @media screen and (max-width: 767px) {
+    @media screen and (min-width: 1200px) {
+      margin-right: 93px;
     }
   }
 }
