@@ -1,0 +1,32 @@
+.mobile-social {
+  @extend %list;
+  display: flex;
+  gap: 20px;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+
+  &__item {
+    position: relative;
+    display: block;
+  }
+
+  &__link {
+    display: block;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+    color: $accent-color;
+  }
+
+  &__link::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    border-bottom: 1px solid rgba(33, 33, 33, 0.2);
+    width: 22px;
+    transform: rotate(90deg);
+  }
+}

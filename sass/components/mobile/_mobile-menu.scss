@@ -1,0 +1,57 @@
+.mobile-menu {
+  &__container {
+    @media screen and (max-width: 767px) {
+      display: none;
+      position: absolute;
+      background-color: $white;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      transform: translateY(-7%);
+      transition: transform $transition-duration $cubic;
+      z-index: 2;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      display: flex;
+      height: 80px;
+      align-items: center;
+      margin-left: auto;
+    }
+
+    @media screen and (min-width: 1200px) {
+      display: flex;
+    }
+  }
+
+  &__container.is-open {
+    display: block;
+    padding: 48px 40px;
+  }
+
+  &__navigation {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 302px;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      margin-right: 96px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      margin-right: 315px;
+    }
+  }
+
+  &__contacts {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 64px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      align-items: center;
+    }
+  }
+}

@@ -3,14 +3,20 @@
 @import './utils/placeholders';
 @import './utils/mixins';
 @import './utils/breakpoints';
+
 @import './components/common';
 @import './components/layouts';
 @import './components/button';
 @import './components/container';
-@import './components/header';
-@import './components/mobile-menu';
-@import './components/header-list';
-@import './components/header-contacts';
+
+@import './components/mobile/mobile-menu';
+@import './components/mobile/mobile-button';
+@import './components/mobile/mobile-social';
+
+@import './components/header/header';
+@import './components/header/header-list';
+@import './components/header/header-contacts';
+
 @import './components/logo';
 @import './components/hero';
 @import './components/backdrop';
@@ -22,11 +28,14 @@
 @import './components/workers';
 @import './components/social-networks';
 @import './components/clients';
+
 @import './components/footer/footer';
 @import './components/footer/footer-contacts';
 @import './components/footer/footer-networks';
 @import './components/footer/footer-form';
+
 @import './components/subs-form';
-@import './components/portfolio-nav';
-@import './components/portfolio-projects';
-@import './components/project-card';
+
+@import './components/portfolio/portfolio-nav';
+@import './components/portfolio/portfolio-projects';
+@import './components/portfolio/project-card';
