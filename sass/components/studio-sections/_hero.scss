@@ -49,20 +49,20 @@
 @media screen and (max-width: 576px) {
   .hero {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url(../images/hero_480.jpg);
+      url(./images/hero_480.jpg);
   }
 
   @media (min-resolution: 2dppx) {
     .hero {
       background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(../images/hero_480@2x.jpg);
+        url(./images/hero_480@2x.jpg);
     }
   }
 
   @media (min-resolution: 3dppx) {
     .hero {
       background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(../images/hero_480@3x.jpg);
+        url(./images/hero_480@3x.jpg);
     }
   }
 }
@@ -70,20 +70,20 @@
 @media screen and (min-width: 577px) and (max-width: 959px) {
   .hero {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url(../images/hero_768.jpg);
+      url(./images/hero_768.jpg);
   }
 
   @media (min-resolution: 2dppx) {
     .hero {
       background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(../images/hero_768@2x.jpg);
+        url(./images/hero_768@2x.jpg);
     }
   }
 
   @media (min-resolution: 3dppx) {
     .hero {
       background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(../images/hero_768@3x.jpg);
+        url(./images/hero_768@3x.jpg);
     }
   }
 }
@@ -91,20 +91,20 @@
 @media screen and (min-width: 960px) {
   .hero {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url(../images/hero_1200.jpg);
+      url(./images/hero_1200.jpg);
   }
 
   @media (min-resolution: 2dppx) {
     .hero {
       background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(../images/hero_1200@2x.jpg);
+        url(./images/hero_1200@2x.jpg);
     }
   }
 
   @media (min-resolution: 3dppx) {
     .hero {
       background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(../images/hero_1200@3x.jpg);
+        url(./images/hero_1200@3x.jpg);
     }
   }
 }
