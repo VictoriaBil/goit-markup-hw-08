@@ -1,5 +1,5 @@
 .hero {
-  max-width: 1600px;
+  // max-width: 1600px;
   min-height: 600px;
   margin-left: auto;
   margin-right: auto;
@@ -21,21 +21,12 @@
   }
 }
 
-@media screen and (max-width: 480px) {
-  @media (min-resolution: 2dppx) {
-    .hero {
-      background-image: url(../../../images/hero_480@2x.jpg);
-    }
-  }
-
-  @media (min-resolution: 3dppx) {
-    .hero {
-      background-image: url(../../../images/hero_480@3x.jpg);
-    }
-  }
-}
-
 @media screen and (max-width: 576px) {
+  .hero {
+    max-width: 576px;
+    background-image: url(../../../images/hero_480.jpg);
+  }
+
   @media (min-resolution: 2dppx) {
     .hero {
       background-image: url(../../../images/hero_480@2x.jpg);
