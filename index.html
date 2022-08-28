@@ -172,7 +172,13 @@
              <ul class="services__list list">
               <li class="services__item">
                 <div class="services-thumb">
-                 <img src="./images/photo_typing.jpg" alt="Печатает на клавиаутре" width="370" />
+                  <picture>
+                    <source srcset="
+                    ./images/photo_typing.jpg 1x,
+                    ./images/photo_typing@2x.jpg 2x"
+                    media="(min-width:1200px)">
+                 <img src="./images/photo_typing.jpg" alt="Печатает на клавиаутре" />
+                 </picture>
                   <div class="services-box">
                    <p class="services__products">Десктопні додатки</p>
                   </div>
@@ -180,7 +186,13 @@
               </li>
               <li class="services__item">
                <div class="services-thumb">
-                <img src="./images/photo_desktop.jpg" alt="Выбирает оформление" width="370" />
+                <picture>
+                    <source srcset="
+                    ./images/photo_desktop.jpg 1x,
+                    ./images/photo_desktop@2x.jpg 2x"
+                    media="(min-width:1200px)">                
+                <img src="./images/photo_desktop.jpg" alt="Выбирает оформление"  />
+                </picture>
                  <div class="services-box"> 
                    <p class="services__products">Мобільні додатки</p> 
                  </div>
@@ -188,7 +200,13 @@
               </li>
               <li class="services__item">
                <div class="services-thumb">
-                 <img src="./images/photo_design.jpg" alt="Делает дизайн" width="370" />
+                <picture>
+                    <source srcset="
+                    ./images/photo_design.jpg 1x,
+                    ./images/photo_design@2x.jpg 2x"
+                    media="(min-width:1200px)"> 
+                 <img src="./images/photo_design.jpg" alt="Делает дизайн"/>
+                 </picture>
                   <div class="services-box">
                    <p class="services__products">Дизайнерські рішення</p>
                   </div>
@@ -206,15 +224,23 @@
              <ul class="workers__list list"> 
 
               <li class="workers__item">
-                <img 
-                   srcset="./images/worker1_450.jpg 1x,
-                           ./images/worker1_450@2x.jpg 2x,
-                           ./images/worker1_354.jpg 1x,
-                           ./images/worker1_354@2x.jpg 2x,
-                           ./images/worker1_270.jpg 1x,
-                           ./images/worker1_270@2x.jpg 2x"
-                   src="./images/worker1_270.jpg" alt="продуктовый дизайнер" >
-                   
+                <picture>
+                  <source srcset="
+                  ./images/worker1_450.jpg 1x,
+                  ./images/worker1_450@2x.jpg 2x"
+                  media="(max-width:767px)">
+                  <source srcset="
+                  ./images/worker1_354.jpg 1x,
+                  ./images/worker1_354@2x.jpg 2x"
+                  media="(max-width:1199px)"
+                  >
+                  <source srcset="
+                  ./images/worker1_270.jpg 1x,
+                  ./images/worker1_270@2x.jpg 2x"
+                  media="(min-width:1200px)">
+
+                <img src="./images/worker1_270.jpg" alt="продуктовый дизайнер" >
+                </picture>
                 <div class="workers__box">
                   <h3 class="workers__name">Игорь Демьяненко</h3>                  
                   <p lang="en" class="workers__speciality">Product Designer</p>    
@@ -253,7 +279,22 @@
 
 
               <li class="workers__item">
-                <img src="./images/fnd_developer.jpg" alt="разработчик" width="270" />
+                <picture>
+                  <source srcset="
+                  ./images/worker2_450.jpg 1x,
+                  ./images/worker2_450@2x.jpg 2x"
+                  media="(max-width:767px)">
+                  <source srcset="
+                  ./images/worker2_354.jpg 1x,
+                  ./images/worker2_354@2x.jpg 2x"
+                  media="(max-width:1199px)"
+                  >
+                  <source srcset="
+                  ./images/worker2_270.jpg 1x,
+                  ./images/worker2_270@2x.jpg 2x"
+                  media="(min-width:1200px)">
+                <img src="./images/fnd_developer.jpg" alt="разработчик" />
+                </picture>
                 <div class="workers__box">
                   <h3 class="workers__name">Ольга Репина</h3>
                   <p lang="en" class="workers__speciality">Frontend Developer</p>
@@ -290,7 +331,22 @@
               </li>
 
               <li class="workers__item">
-                <img src="./images/marketing.jpg" alt="маркетолог" width="270" />
+                <picture>
+                  <source srcset="
+                  ./images/worker3_450.jpg 1x,
+                  ./images/worker3_450@2x.jpg 2x"
+                  media="(max-width:767px)">
+                  <source srcset="
+                  ./images/worker3_354.jpg 1x,
+                  ./images/worker3_354@2x.jpg 2x"
+                  media="(max-width:1199px)"
+                  >
+                  <source srcset="
+                  ./images/worker3_270.jpg 1x,
+                  ./images/worker3_270@2x.jpg 2x"
+                  media="(min-width:1200px)">
+                <img src="./images/worker3_270.jpg" alt="маркетолог"  />
+                </picture>
                 <div class="workers__box">
                   <h3 class="workers__name">Николай Тарасов</h3>
                   <p lang="en" class="workers__speciality type">Marketing</p>
@@ -327,7 +383,22 @@
               </li>
 
               <li class="workers__item">
-                <img src="./images/designer.jpg" alt="дизайнер" width="270" />
+                <picture>
+                  <source srcset="
+                  ./images/worker4_450.jpg 1x,
+                  ./images/worker4_450@2x.jpg 2x"
+                  media="(max-width:767px)">
+                  <source srcset="
+                  ./images/worker4_354.jpg 1x,
+                  ./images/worker4_354@2x.jpg 2x"
+                  media="(max-width:1199px)"
+                  >
+                  <source srcset="
+                  ./images/worker4_270.jpg 1x,
+                  ./images/worker4_270@2x.jpg 2x"
+                  media="(min-width:1200px)">
+                <img src="./images/designer.jpg" alt="дизайнер" />
+                </picture>
                 <div class="workers__box">
                   <h3 class="workers__name">Михаил Ермаков</h3>
                   <p lang="en" class="workers__speciality">UI Designer</p>                
