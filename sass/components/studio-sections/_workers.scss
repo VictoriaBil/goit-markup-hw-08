@@ -51,27 +51,15 @@
       margin-left: auto;
       margin-right: auto;
       margin-bottom: 30px;
-
-      // img {
-      //   width: 450px;
-      // }
     }
 
     @media screen and (min-width: 768px) and (max-width: 1199px) {
       display: block;
       width: calc((100% - 2 * 30px) / 2);
 
-      // img {
-      //   width: 354px;
-      // }
-
       @media screen and (min-width: 1200px) {
         width: 270px;
         margin-bottom: 30px;
-
-        // img {
-        //   width: 270px;
-        // }
       }
     }
 
