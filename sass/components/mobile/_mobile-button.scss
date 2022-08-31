@@ -22,13 +22,13 @@
     margin-right: 15px;
   }
 
-  &__icon {
+  &__svg {
     fill: currentColor;
     transition: fill $transition-duration $cubic;
   }
 
-  &__icon:hover,
-  &__icon:focus {
+  &__svg:hover,
+  &__svg:focus {
     fill: $accent-color;
   }
 }
